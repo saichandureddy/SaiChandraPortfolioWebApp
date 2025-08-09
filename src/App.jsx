@@ -6,14 +6,23 @@ export default function App() {
 
   useEffect(() => {
     // Fetch the portfolio configuration data
-    fetch('/portfolio.config.json')
-      .then(response => response.json())
+    const basePath = import.meta.env.BASE_URL || '/';
+    const configPath = `${basePath}portfolio.config.json`.replace('//', '/');
+    
+    fetch(configPath)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => {
         setPortfolioData(data);
         setLoading(false);
       })
       .catch(error => {
         console.error('Error loading portfolio data:', error);
+        console.error('Attempted to fetch from:', configPath);
         setLoading(false);
       });
   }, []);
