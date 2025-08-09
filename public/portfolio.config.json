@@ -1,0 +1,277 @@
+{
+  "site": {
+    "title": "Sai \u2014 Data Science & ML Portfolio",
+    "description": "Projects and impact across analytics, ML, and BI in automotive retail.",
+    "author": "Sai Chandra Reddy Mandadapu",
+    "theme": "system"
+  },
+  "hero": {
+    "headline": "Data Analyst \u2192 Data Scientist",
+    "subheadline": "I build analytics and ML solutions that drive revenue, optimize inventory, and improve marketing efficiency.",
+    "ctaPrimary": {
+      "label": "Download Resume",
+      "href": "/resume.pdf"
+    },
+    "ctaSecondary": {
+      "label": "Contact Me",
+      "href": "mailto:you@example.com"
+    },
+    "socials": [
+      {
+        "type": "github",
+        "href": "https://github.com/yourname"
+      },
+      {
+        "type": "linkedin",
+        "href": "https://linkedin.com/in/yourprofile"
+      },
+      {
+        "type": "email",
+        "href": "mailto:you@example.com"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "level": 90
+    },
+    {
+      "name": "SQL",
+      "level": 90
+    },
+    {
+      "name": "Power BI",
+      "level": 85
+    },
+    {
+      "name": "Looker Studio",
+      "level": 75
+    },
+    {
+      "name": "scikit-learn",
+      "level": 85
+    },
+    {
+      "name": "TensorFlow",
+      "level": 60
+    },
+    {
+      "name": "XGBoost",
+      "level": 80
+    },
+    {
+      "name": "Time Series",
+      "level": 80
+    },
+    {
+      "name": "BigQuery",
+      "level": 80
+    },
+    {
+      "name": "dbt",
+      "level": 70
+    }
+  ],
+  "achievements": [
+    {
+      "year": "2025",
+      "title": "Inventory Optimization Initiative",
+      "detail": "Cut stockouts by 18% and reduced aged units."
+    },
+    {
+      "year": "2024",
+      "title": "GA4\u2192BigQuery Automation",
+      "detail": "Reduced manual reporting time by 70%."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Dealership Inventory Optimization",
+      "summary": "Predict optimal 90-day inventory per trim using market & dealer features (turn rate, DOL, MSRP, demand gap).",
+      "tags": [
+        "ML",
+        "Forecasting",
+        "Feature Engineering",
+        "Automotive"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/inventory-optimizer"
+        },
+        {
+          "label": "Case Study",
+          "href": "https://yourblog.com/posts/inventory-optimizer"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Inventory+Optimization",
+      "impact": "\u2191 sell-through, \u2193 aged inventory, improved capital efficiency"
+    },
+    {
+      "title": "Dynamic Pricing Elasticity for Used Cars",
+      "summary": "Estimated price elasticity by Year/Make/Model using hierarchical models and SHAP for explainability.",
+      "tags": [
+        "Causal",
+        "Pricing",
+        "XGBoost",
+        "Explainability"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/dynamic-pricing-elasticity"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Pricing+Elasticity",
+      "impact": "+9% pricing accuracy vs. baseline"
+    },
+    {
+      "title": "Marketing Analytics with GA4 + BigQuery",
+      "summary": "Attribution and VDP funnel analysis; A/B tests for channel mix; Looker Studio dashboards.",
+      "tags": [
+        "Analytics",
+        "GA4",
+        "SQL",
+        "A/B Testing"
+      ],
+      "links": [
+        {
+          "label": "Deck",
+          "href": "https://example.com/ga4-deck"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Marketing+Analytics",
+      "impact": "+12% VDP\u2192Lead conversion"
+    },
+    {
+      "title": "Service Churn Prediction",
+      "summary": "Predicted 90-day service defection using visit cadence, spend, and VIN features; targeted offers.",
+      "tags": [
+        "Classification",
+        "Retention",
+        "sklearn"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/service-churn"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Service+Churn",
+      "impact": "Reduced churn risk in top decile by 15%"
+    },
+    {
+      "title": "Accessory Recommender (Cross-sell)",
+      "summary": "Association rules + matrix factorization to recommend accessories by model and customer behavior.",
+      "tags": [
+        "Recommender",
+        "Market Basket"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/accessory-recsys"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Accessory+Recommender",
+      "impact": "+8% attachment rate"
+    },
+    {
+      "title": "Multivariate Time Series & Anomaly Detection (Fleet)",
+      "summary": "Forecast sensors and detect anomalies for predictive maintenance; alerting rules.",
+      "tags": [
+        "Time Series",
+        "Anomaly Detection",
+        "LSTM"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/fleet-anomaly"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=Fleet+Anomaly+Detection",
+      "impact": "Early alerts for out-of-range behavior"
+    },
+    {
+      "title": "Modern Data Stack: BigQuery + dbt",
+      "summary": "End-to-end warehouse with staging, marts, tests, and CI; SCD logic and documentation.",
+      "tags": [
+        "Data Engineering",
+        "dbt",
+        "BigQuery"
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "href": "https://github.com/yourname/bq-dbt-stack"
+        }
+      ],
+      "image": "https://via.placeholder.com/1200x630?text=BigQuery+%2B+dbt",
+      "impact": "Faster, versioned analytics delivery"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Automotive Group (34 Stores)",
+      "role": "Data Analyst",
+      "period": "2025 \u2014 Present",
+      "bullets": [
+        "Built inventory demand forecasting and pricing analytics for dealership network.",
+        "Integrated CDK, CDP, and GA4 into a central analytics repository.",
+        "Partnered with store leaders to operationalize insights and KPIs."
+      ]
+    },
+    {
+      "company": "Cloud Theory",
+      "role": "Data Analyst / Data Scientist",
+      "period": "2024 \u2014 2025",
+      "bullets": [
+        "Analyzed DMA market share and turn rate across trims and fuel types.",
+        "Created dashboards and ad-hoc analyses for leadership and field teams."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Northeastern University",
+      "degree": "MS, Data Analytics Engineering",
+      "period": "2022 \u2014 2024"
+    },
+    {
+      "school": "MLR Institute of Technology",
+      "degree": "BE, Computer Science",
+      "period": "2016 \u2014 2020"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Analytics 4 (GA4)",
+      "issuer": "Google",
+      "year": "2024"
+    },
+    {
+      "name": "dbt Fundamentals",
+      "issuer": "dbt Labs",
+      "year": "2025"
+    }
+  ],
+  "blog": [
+    {
+      "title": "From Market Moved to Stock Plan",
+      "href": "https://yourblog.com/posts/stock-plan",
+      "date": "2025-07-01"
+    },
+    {
+      "title": "GA4 to BigQuery: A Practical Guide",
+      "href": "https://yourblog.com/posts/ga4-bq",
+      "date": "2025-05-12"
+    }
+  ],
+  "contact": {
+    "email": "you@example.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourname"
+  }
+}

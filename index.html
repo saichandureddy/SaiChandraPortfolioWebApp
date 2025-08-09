@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sai — Data Science & ML Portfolio</title>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .delay-2000 {
+    animation-delay: 2s;
+  }
+
+  /* Custom pulse animation with delays */
+  .animate-pulse.delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animate-pulse.delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+</head>
+<body>
+<div id='root'></div>
+<script type='module' src='/src/main.jsx'></script>
+</body>
+</html>
