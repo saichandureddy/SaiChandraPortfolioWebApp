@@ -25,11 +25,17 @@ A modern, animated portfolio website built with React and Vite, showcasing data 
 2. **Install Git**: Download from https://git-scm.com/download/win
 
 **Local Development:**
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run development server: `npm run dev`
-4. Open http://localhost:5173 in your browser
-5. Build for production: `npm run build`
+
+**Easy Way (Windows):**
+1. **Install Node.js**: Download from https://nodejs.org/ (choose LTS version)
+2. **Double-click** `start-portfolio.bat` file
+3. Your portfolio will automatically open at http://localhost:5173
+
+**Manual Way:**
+1. Install dependencies: `npm install`
+2. Run development server: `npm run dev`
+3. Open http://localhost:5173 in your browser
+4. Build for production: `npm run build`
 
 ## 🌐 GitHub Pages Deployment
 
