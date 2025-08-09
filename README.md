@@ -31,9 +31,42 @@ A modern, animated portfolio website built with React and Vite, showcasing data 
 4. Open http://localhost:5173 in your browser
 5. Build for production: `npm run build`
 
-## 🌐 Deployment
+## 🌐 GitHub Pages Deployment
 
-This portfolio is automatically deployed to GitHub Pages using GitHub Actions. Every push to the main branch triggers a new deployment.
+**Step-by-Step Deployment Process:**
+
+1. **Create GitHub Repository:**
+   - Go to https://github.com and create a new repository
+   - Name it: `SaiChandraPortfolioWebApp`
+   - Make it **Public**
+   - Don't initialize with README
+
+2. **Push Your Code:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Add animated portfolio website"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/SaiChandraPortfolioWebApp.git
+   git push -u origin main
+   ```
+
+3. **Enable GitHub Pages (IMPORTANT - Do this BEFORE the workflow runs):**
+   - Go to your repository on GitHub
+   - Click **Settings** tab
+   - Scroll to **Pages** in the left sidebar
+   - Under **Source**, select **GitHub Actions**
+   - Click **Save**
+
+4. **Trigger Deployment:**
+   - Make any small change to your code
+   - Commit and push: `git add . && git commit -m "Enable Pages" && git push`
+   - The GitHub Actions workflow will now run successfully
+
+5. **Access Your Site:**
+   - Your portfolio will be live at: `https://YOUR_USERNAME.github.io/SaiChandraPortfolioWebApp/`
+
+**Note:** You must enable GitHub Pages in repository settings BEFORE pushing code with the workflow, otherwise you'll get the "Pages not enabled" error.
 
 ## 📝 Customization
 
