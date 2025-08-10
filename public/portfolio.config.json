@@ -87,7 +87,7 @@
   ],
   "projects": [
     {
-      "title": "Data Analysis",
+      "title": "Data Analysis Project",
       "summary": "Predict optimal 90-day inventory per trim using market & dealer features (turn rate, DOL, MSRP, demand gap).",
       "tags": [
         "ML",
