@@ -14,7 +14,7 @@
     },
     "ctaSecondary": {
       "label": "Contact Me",
-      "href": "mailto:you@example.com"
+      "href": "mailto:msaichandrareddy8@gmail.com"
     },
     "socials": [
       {
@@ -105,7 +105,7 @@
           "href": "https://yourblog.com/posts/inventory-optimizer"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Inventory+Optimization",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format",
       "impact": "\u2191 sell-through, \u2193 aged inventory, improved capital efficiency"
     },
     {
@@ -123,7 +123,7 @@
           "href": "https://github.com/yourname/dynamic-pricing-elasticity"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Pricing+Elasticity",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop&auto=format",
       "impact": "+9% pricing accuracy vs. baseline"
     },
     {
@@ -141,7 +141,7 @@
           "href": "https://example.com/ga4-deck"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Marketing+Analytics",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format",
       "impact": "+12% VDP\u2192Lead conversion"
     },
     {
@@ -158,7 +158,7 @@
           "href": "https://github.com/yourname/service-churn"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Service+Churn",
+      "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=630&fit=crop&auto=format",
       "impact": "Reduced churn risk in top decile by 15%"
     },
     {
@@ -174,7 +174,7 @@
           "href": "https://github.com/yourname/accessory-recsys"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Accessory+Recommender",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=630&fit=crop&auto=format",
       "impact": "+8% attachment rate"
     },
     {
@@ -191,7 +191,7 @@
           "href": "https://github.com/yourname/fleet-anomaly"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=Fleet+Anomaly+Detection",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&auto=format",
       "impact": "Early alerts for out-of-range behavior"
     },
     {
@@ -208,7 +208,7 @@
           "href": "https://github.com/yourname/bq-dbt-stack"
         }
       ],
-      "image": "https://via.placeholder.com/1200x630?text=BigQuery+%2B+dbt",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format",
       "impact": "Faster, versioned analytics delivery"
     }
   ],
