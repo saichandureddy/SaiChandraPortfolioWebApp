@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 export default function App() {
   const [portfolioData, setPortfolioData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   useEffect(() => {
     // Fetch the portfolio configuration data
@@ -65,11 +67,9 @@ export default function App() {
             Sai Chandra Portfolio
           </h1>
           <div className="text-center">
-            <h2 className="text-3xl text-blue-100 mb-6 animate-fade-in-up delay-200">Hi, Welcome to my portfolio website!</h2>
-            <p className="text-xl text-blue-50 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-400">
-              I am {portfolioData.site.author}, working as a Data Analyst → Data Scientist. 
-              I build analytics and ML solutions that drive revenue, optimize inventory, and improve marketing efficiency 
-              in the automotive retail industry.
+            <h2 className="text-3xl text-blue-100 mb-6">Welcome to my portfolio website!</h2>
+            <p className="text-xl text-blue-50 max-w-4xl mx-auto leading-relaxed">
+              I’m Sai Chandra Reddy Mandadapu, a Data Analyst passionate about transforming data into actionable insights. I work across retail and marketing domains, leveraging analytics, statistical modeling, and interactive dashboards to drive smarter decisions, uncover customer behavior patterns, and accelerate business growth.
             </p>
           </div>
         </div>
@@ -301,6 +301,49 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Contact Form Modal */}
+      {isContactModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+            {isFormSubmitted ? (
+              <div className="text-center">
+                <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
+                <p>Your message has been successfully sent. We will get back to you soon.</p>
+                <button onClick={() => setIsContactModalOpen(false)} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">Close</button>
+              </div>
+            ) : (
+              <>
+                <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+                <form action="https://formspree.io/f/mwpnvkkn" method="POST" onSubmit={() => setIsFormSubmitted(true)}>
+                  <label htmlFor="first-name" className="block text-sm font-medium mb-1">First Name:</label>
+                  <input type="text" id="first-name" name="first-name" className="w-full p-2 border rounded mb-4" required />
+
+                  <label htmlFor="last-name" className="block text-sm font-medium mb-1">Last Name:</label>
+                  <input type="text" id="last-name" name="last-name" className="w-full p-2 border rounded mb-4" required />
+
+                  <label htmlFor="occupation" className="block text-sm font-medium mb-1">Occupation:</label>
+                  <input type="text" id="occupation" name="occupation" className="w-full p-2 border rounded mb-4" />
+
+                  <label htmlFor="organization" className="block text-sm font-medium mb-1">Organization:</label>
+                  <input type="text" id="organization" name="organization" className="w-full p-2 border rounded mb-4" />
+
+                  <label htmlFor="email" className="block text-sm font-medium mb-1">Email:</label>
+                  <input type="email" id="email" name="email" className="w-full p-2 border rounded mb-4" required />
+
+                  <label htmlFor="message" className="block text-sm font-medium mb-1">Message:</label>
+                  <textarea id="message" name="message" className="w-full p-2 border rounded mb-4" required></textarea>
+
+                  <div className="flex justify-end">
+                    <button type="button" onClick={() => setIsContactModalOpen(false)} className="mr-4 px-4 py-2 bg-gray-300 rounded">Cancel</button>
+                    <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded">Send</button>
+                  </div>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
