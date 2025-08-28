@@ -19,15 +19,15 @@
     "socials": [
       {
         "type": "github",
-        "href": "https://github.com/yourname"
+        "href": "https://github.com/saichandureddy"
       },
       {
         "type": "linkedin",
-        "href": "https://linkedin.com/in/yourprofile"
+        "href": "https://www.linkedin.com/in/sai-chandra-reddy-mandadapu/"
       },
       {
         "type": "email",
-        "href": "mailto:you@example.com"
+        "href": "mailto:msaichandrareddy16@gmail.com"
       }
     ]
   },
@@ -38,6 +38,7 @@
     },
     {
       "name": "SQL",
+
       "level": 90
     },
     {
@@ -214,22 +215,40 @@
   ],
   "experience": [
     {
-      "company": "Automotive Group (34 Stores)",
+      "company": "Mills Automotive Group",
       "role": "Data Analyst",
-      "period": "2025 \u2014 Present",
+      "period": "November 2024 \u2014 Present",
       "bullets": [
         "Built inventory demand forecasting and pricing analytics for dealership network.",
         "Integrated CDK, CDP, and GA4 into a central analytics repository.",
-        "Partnered with store leaders to operationalize insights and KPIs."
+        "Developed self-service Excel Google Sheets, Looker Studio reporting for stakeholders."
       ]
     },
     {
-      "company": "Cloud Theory",
-      "role": "Data Analyst / Data Scientist",
-      "period": "2024 \u2014 2025",
+      "company": "General Motors",
+      "role": "Business Intelligence Analyst",
+      "period": "March 2024 \u2014 August 2024",
       "bullets": [
-        "Analyzed DMA market share and turn rate across trims and fuel types.",
-        "Created dashboards and ad-hoc analyses for leadership and field teams."
+        "Transformed SAP ERP data in Snowflake by creating staging, fact, and dimension tables, enabling reliable reporting for material waste analysis for each supplier.",
+        "Designed star schema data modeling in Power BI, created calculated columns and measures using DAX formulas, improved 60% automated tracking of production waste and supplier material usage."
+      ]
+    },
+    {
+      "company": "State Street",
+      "role": "Technical Business Analyst Coop",
+      "period": "July 2022 \u2014 December 2022",
+      "bullets": [
+        "Enhanced SQL Server stored procedures using T-SQL to improve financial reporting validation logic, reducing downstream reporting discrepancies by 20%.",
+        "Revamped Power BI dashboards connected to JIRA Cloud by redesigning data models, cleaning Power Query tables, and implementing Row-Level Security (RLS), improving KPI accuracy and cutting reporting inconsistencies by 40%."
+      ]
+    },
+    {
+      "company": "Apps Associates",
+      "role": "Business Intelligence Analyst",
+      "period": "August 2019 \u2014 August 2021",
+      "bullets": [
+        "Developed SQL ETL pipelines to extract data from Oracle ERP systems into data warehouse, enabling downstream analysis for retail, ecommerce and supply chain reporting availability for business stakeholders by 30%.",
+        "Built Oracle BI Publisher reports integrated with PL/SQL triggers to automate tracking of EDI order details end to end, reducing manual reporting effort by 20%, accelerating warehouse operations reporting at each stage."
       ]
     }
   ],
@@ -237,12 +256,12 @@
     {
       "school": "Northeastern University",
       "degree": "MS, Data Analytics Engineering",
-      "period": "2022 \u2014 2024"
+      "period": "September 2021 \u2014 December 2023"
     },
     {
       "school": "MLR Institute of Technology",
       "degree": "BE, Computer Science",
-      "period": "2016 \u2014 2020"
+      "period": "August 2015 \u2014 May 2019"
     }
   ],
   "certifications": [
@@ -270,8 +289,8 @@
     }
   ],
   "contact": {
-    "email": "you@example.com",
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourname"
+    "email": "mailto:msaichandrareddy16@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sai-chandra-reddy-mandadapu",
+    "github": "https://github.com/saichandureddy"
   }
 }
