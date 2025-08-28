@@ -61,7 +61,7 @@ export default function App() {
       <header className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 py-16 overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-8">
-          <h1 className="text-5xl font-bold text-white text-center mb-6 animate-bounce">
+          <h1 className="text-5xl font-bold text-white text-center mb-6">
             Sai Chandra Portfolio
           </h1>
           <div className="text-center">
