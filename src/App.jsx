@@ -130,7 +130,7 @@ export default function App() {
       {/* Skills & Technologies */}
       <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center animate-fade-in-up">Skills & Technologies</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Skills & Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
             {portfolioData.skills.map((skill, index) => (
               <div 
@@ -138,7 +138,7 @@ export default function App() {
                 className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-3 border border-white/50"
                 style={{animationDelay: `${index * 100}ms`}}
               >
-                <div className="mb-4 animate-bounce">
+                <div className="mb-4">
                   <SkillIcon skillName={skill.name} />
                 </div>
                 <span className="text-gray-800 font-semibold text-sm">{skill.name}</span>
