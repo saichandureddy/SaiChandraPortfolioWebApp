@@ -316,11 +316,26 @@ export default function App() {
               <>
                 <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
                 <form
-                  action="https://formspree.io/f/mwpnvkkn"
-                  method="POST"
                   onSubmit={(event) => {
                     event.preventDefault(); // Prevent page reload
-                    setIsFormSubmitted(true); // Update the state
+                    const formData = new FormData(event.target);
+                    fetch("https://formspree.io/f/mwpnvkkn", {
+                      method: "POST",
+                      body: formData,
+                      headers: {
+                        Accept: "application/json",
+                      },
+                    })
+                      .then((response) => {
+                        if (response.ok) {
+                          setIsFormSubmitted(true); // Update the state
+                        } else {
+                          alert("Failed to submit the form. Please try again.");
+                        }
+                      })
+                      .catch(() => {
+                        alert("An error occurred. Please try again.");
+                      });
                   }}
                 >
                   <label htmlFor="first-name" className="block text-sm font-medium mb-1">First Name:</label>
