@@ -315,7 +315,14 @@ export default function App() {
             ) : (
               <>
                 <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
-                <form action="https://formspree.io/f/mwpnvkkn" method="POST" onSubmit={() => setIsFormSubmitted(true)}>
+                <form
+                  action="https://formspree.io/f/mwpnvkkn"
+                  method="POST"
+                  onSubmit={(event) => {
+                    event.preventDefault(); // Prevent page reload
+                    setIsFormSubmitted(true); // Update the state
+                  }}
+                >
                   <label htmlFor="first-name" className="block text-sm font-medium mb-1">First Name:</label>
                   <input type="text" id="first-name" name="first-name" className="w-full p-2 border rounded mb-4" required />
 
