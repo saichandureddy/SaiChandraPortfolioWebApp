@@ -114,14 +114,10 @@ export default function App() {
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center animate-fade-in-up">About Me</h2>
           <div className="max-w-5xl mx-auto space-y-8 text-gray-700 text-xl leading-relaxed">
             <p className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              I am a passionate data professional with expertise in analytics, machine learning, and business intelligence. 
-              My journey began in computer science and evolved into specializing in data-driven solutions for the automotive industry. 
-              I have hands-on experience in building predictive models, optimizing inventory systems, and creating actionable insights from complex datasets.
+              I’m a passionate data professional with a solid foundation in computer science and a Master’s in Data Analytics Engineering from Northeastern University. My work focuses on translating complex data into business impact—developing predictive models, analyzing performance trends, and building interactive dashboards. I specialize in uncovering meaningful patterns, crafting data stories, and delivering insights and recommendations that support confident, data-driven decision-making.
             </p>
             <p className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              I hold a Master's degree in Data Analytics Engineering from Northeastern University and a Bachelor's in Computer Science. 
-              My goal is to leverage data to solve real-world problems and create value for businesses and their customers. 
-              I enjoy collaborating with cross-functional teams and mentoring others in their data science journey.
+              I’m deeply motivated to grow further in the world of data science, machine learning, and artificial intelligence. I’m always eager to upskill, explore new technologies, and take on challenging problems that make a difference. I actively seek opportunities where I can learn, innovate, and advance my career while contributing meaningfully to data-driven organizations.
             </p>
           </div>
         </div>
