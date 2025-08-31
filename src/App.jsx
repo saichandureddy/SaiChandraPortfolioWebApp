@@ -410,6 +410,14 @@ function SkillIcon({ skillName }) {
     'numpy': `${basePath}Images/numpy.png`,
     'scikit-learn': `${basePath}Images/scikit learn.png`,
     'scikit learn': `${basePath}Images/scikit learn.png`,
+    // BI / Visualization
+    'power bi': `${basePath}Images/powerbi.png`,
+    'powerbi': `${basePath}Images/powerbi.png`,
+    'looker studio': `${basePath}Images/lookerstudio.png`,
+    'lookerstudio': `${basePath}Images/lookerstudio.png`,
+    // Warehouses / Analytics Engineering
+    'bigquery': `${basePath}Images/bigquery.png`,
+    'dbt': `${basePath}Images/dbt.png`,
     'sql': `${basePath}Images/mysql.png`,
     'mysql': `${basePath}Images/mysql.png`,
     'postgresql': `${basePath}Images/postgresql.png`,
@@ -437,8 +445,6 @@ function SkillIcon({ skillName }) {
     'sheets': `${basePath}Images/googlesheets.png`,
     'mongodb': `${basePath}Images/mongodb.png`,
     'tableau': `${basePath}Images/tableau.png`,
-    'linkedin': `${basePath}Images/linkedin.png`,
-    'gmail': `${basePath}Images/gmail.png`,
   };
 
   // Best-effort source selection: direct map, or try sensible fallbacks
