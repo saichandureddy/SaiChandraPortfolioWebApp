@@ -7,11 +7,12 @@ export default function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   useEffect(() => {
-    // Fetch the portfolio configuration data
+    // Fetch the portfolio configuration data (avoid stale cache)
     const basePath = import.meta.env.BASE_URL || '/';
-    const configPath = `${basePath}portfolio.config.json`.replace('//', '/');
-    
-    fetch(configPath)
+    const version = (import.meta && import.meta.env && import.meta.env.VITE_ASSET_VERSION) || Date.now();
+    const configPath = `${basePath}portfolio.config.json?v=${version}`.replace('//', '/');
+
+    fetch(configPath, { cache: 'no-store' })
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -264,11 +265,7 @@ export default function App() {
                         <p className="text-2xl text-blue-600 font-bold mb-4">{edu.school}</p>
                         <p className="text-gray-600 text-xl font-semibold">{edu.period}</p>
                       </div>
-                      <div className="text-right">
-                        <div className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 px-6 py-3 rounded-full font-bold text-lg border border-blue-200">
-                          {edu.degree.includes('MS') || edu.degree.includes('Master') ? 'Graduate' : 'Undergraduate'}
-                        </div>
-                      </div>
+                      {/* Removed Graduate/Undergraduate badge */}
                     </div>
                   </div>
                 </div>
