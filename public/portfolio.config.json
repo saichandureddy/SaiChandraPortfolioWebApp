@@ -32,47 +32,22 @@
     ]
   },
   "skills": [
-    {
-      "name": "Python",
-      "level": 90
-    },
-    {
-      "name": "SQL",
-
-      "level": 90
-    },
-    {
-      "name": "Power BI",
-      "level": 85
-    },
-    {
-      "name": "Looker Studio",
-      "level": 75
-    },
-    {
-      "name": "scikit-learn",
-      "level": 85
-    },
-    {
-      "name": "TensorFlow",
-      "level": 60
-    },
-    {
-      "name": "XGBoost",
-      "level": 80
-    },
-    {
-      "name": "Time Series",
-      "level": 80
-    },
-    {
-      "name": "BigQuery",
-      "level": 80
-    },
-    {
-      "name": "dbt",
-      "level": 70
-    }
+    { "name": "Python", "level": 90 },
+    { "name": "R", "level": 80 },
+    { "name": "MySQL", "level": 85 },
+    { "name": "PostgreSQL", "level": 80 },
+    { "name": "BigQuery", "level": 80 },
+    { "name": "Snowflake", "level": 80 },
+    { "name": "SQL Server", "level": 80 },
+    { "name": "Oracle DB", "level": 75 },
+    { "name": "Power BI", "level": 85 },
+    { "name": "Tableau", "level": 85 },
+    { "name": "Looker Studio", "level": 75 },
+    { "name": "Google Analytics 4", "level": 75 },
+    { "name": "Excel", "level": 85 },
+    { "name": "Google Sheets", "level": 85 },
+    { "name": "dbt", "level": 70 },
+    { "name": "Airflow", "level": 75 }
   ],
   "achievements": [
     {

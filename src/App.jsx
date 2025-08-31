@@ -410,14 +410,13 @@ function SkillIcon({ skillName }) {
     'numpy': `${basePath}Images/numpy.png`,
     'scikit-learn': `${basePath}Images/scikit learn.png`,
     'scikit learn': `${basePath}Images/scikit learn.png`,
-    // BI / Visualization
-    'power bi': `${basePath}Images/powerbi.png`,
-    'powerbi': `${basePath}Images/powerbi.png`,
-    'looker studio': `${basePath}Images/lookerstudio.png`,
-    'lookerstudio': `${basePath}Images/lookerstudio.png`,
     'sql': `${basePath}Images/mysql.png`,
     'mysql': `${basePath}Images/mysql.png`,
     'postgresql': `${basePath}Images/postgresql.png`,
+    'sql server': `${basePath}Images/sqlserver.jpg`,
+    'microsoft sql server': `${basePath}Images/sqlserver.jpg`,
+    'oracle db': `${basePath}Images/oracle.png`,
+    'oracle': `${basePath}Images/oracle.png`,
     'snowflake': `${basePath}Images/snowflake.png`,
     'spark': `${basePath}Images/spark.png`,
     'hadoop': `${basePath}Images/hadoop.png`,
@@ -431,14 +430,15 @@ function SkillIcon({ skillName }) {
     'jenkins': `${basePath}Images/jenkins.png`,
     'aws': `${basePath}Images/aws.png`,
     'azure': `${basePath}Images/azure.png`,
+    'excel': `${basePath}Images/excel.png`,
+    'google analytics 4': `${basePath}Images/googleanalytics4.png`,
+    'ga4': `${basePath}Images/googleanalytics4.png`,
+    'google sheets': `${basePath}Images/googlesheets.png`,
+    'sheets': `${basePath}Images/googlesheets.png`,
     'mongodb': `${basePath}Images/mongodb.png`,
     'tableau': `${basePath}Images/tableau.png`,
-    // ML Frameworks
-    'tensorflow': `${basePath}Images/tensorflow.png`,
-    'xgboost': `${basePath}Images/xgboost.png`,
-    // Analytics Engineering
-    'dbt': `${basePath}Images/dbt.png`,
-    'bigquery': `${basePath}Images/bigquery.png`,
+    'linkedin': `${basePath}Images/linkedin.png`,
+    'gmail': `${basePath}Images/gmail.png`,
   };
 
   // Best-effort source selection: direct map, or try sensible fallbacks
