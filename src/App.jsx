@@ -394,93 +394,65 @@ function SocialIcon({ type }) {
   }
 }
 
-// Skill Icon Component
+// Skill Icon Component (loads from public/Images with graceful fallback)
 function SkillIcon({ skillName }) {
-  const iconClass = "w-12 h-12 mx-auto";
-  const skill = skillName.toLowerCase();
-  
-  switch (skill) {
-    case 'python':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="none">
-          <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z" fill="#306998"/>
-          <path d="M21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z" fill="#FFD43B"/>
-        </svg>
-      );
-    case 'sql':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#336791">
-          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 16.568C16.327 17.81 14.39 18.5 12 18.5s-4.327-.69-5.568-1.932C5.19 15.327 4.5 13.39 4.5 11s.69-4.327 1.932-5.568C7.673 4.19 9.61 3.5 12 3.5s4.327.69 5.568 1.932C18.81 6.673 19.5 8.61 19.5 11s-.69 4.327-1.932 5.568z"/>
-          <path d="M12 5c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="#fff"/>
-          <text x="12" y="15" textAnchor="middle" fontSize="6" fill="#336791" fontFamily="Arial, sans-serif" fontWeight="bold">SQL</text>
-        </svg>
-      );
-    case 'power bi':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#F2C811">
-          <rect x="2" y="8" width="4" height="12" fill="#F2C811"/>
-          <rect x="7" y="5" width="4" height="15" fill="#F2C811"/>
-          <rect x="12" y="2" width="4" height="18" fill="#F2C811"/>
-          <rect x="17" y="6" width="4" height="14" fill="#F2C811"/>
-        </svg>
-      );
-    case 'looker studio':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#4285F4">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-        </svg>
-      );
-    case 'scikit-learn':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#F7931E">
-          <path d="M12.1 2.1c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8zm0 17.6c-4.3 0-7.8-3.5-7.8-7.8s3.5-7.8 7.8-7.8 7.8 3.5 7.8 7.8-3.5 7.8-7.8 7.8z"/>
-          <circle cx="12" cy="12" r="3" fill="#F7931E"/>
-        </svg>
-      );
-    case 'tensorflow':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#FF6F00">
-          <path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.708 5.307l-.02 5.357-6.132-3.557V18.5L12.46 24V0l10.54 5.856v5.307z"/>
-        </svg>
-      );
-    case 'xgboost':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#1f77b4">
-          <rect x="2" y="2" width="20" height="20" rx="2" fill="#1f77b4"/>
-          <text x="12" y="15" textAnchor="middle" fontSize="8" fill="white" fontFamily="Arial, sans-serif" fontWeight="bold">XGB</text>
-        </svg>
-      );
-    case 'time series':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#2E8B57">
-          <path d="M3 17l6-6 4 4 8-8" stroke="#2E8B57" strokeWidth="2" fill="none"/>
-          <circle cx="3" cy="17" r="2" fill="#2E8B57"/>
-          <circle cx="9" cy="11" r="2" fill="#2E8B57"/>
-          <circle cx="13" cy="15" r="2" fill="#2E8B57"/>
-          <circle cx="21" cy="7" r="2" fill="#2E8B57"/>
-        </svg>
-      );
-    case 'bigquery':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#4285F4">
-          <path d="M12 0L2 6v12l10 6 10-6V6L12 0zm0 2.5L19.5 7 12 11.5 4.5 7 12 2.5zm-8 6.9L12 13.5v7L4 16.5v-7zm16 0v7L12 20.5v-7L20 9.4z"/>
-        </svg>
-      );
-    case 'dbt':
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#FF694B">
-          <path d="M12 0L2.5 6v12L12 24l9.5-6V6L12 0zm0 2.5L19 7v10l-7 4.5L5 17V7l7-4.5z"/>
-          <text x="12" y="15" textAnchor="middle" fontSize="6" fill="#FF694B" fontFamily="Arial, sans-serif" fontWeight="bold">dbt</text>
-        </svg>
-      );
-    default:
-      return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="#6B7280">
-          <rect x="3" y="3" width="18" height="18" rx="2" fill="#6B7280"/>
-          <text x="12" y="15" textAnchor="middle" fontSize="8" fill="white" fontFamily="Arial, sans-serif" fontWeight="bold">
-            {skillName.charAt(0).toUpperCase()}
-          </text>
-        </svg>
-      );
+  const [imgError, setImgError] = useState(false);
+  const iconClass = "w-12 h-12 mx-auto object-contain";
+
+  const key = (skillName || "").toLowerCase().trim();
+  const basePath = (import.meta && import.meta.env && import.meta.env.BASE_URL) || '/';
+
+  // Map common skill names to specific files in public/Images
+  const iconMap = {
+    'python': `${basePath}Images/Python.jpg`,
+    'r': `${basePath}Images/R.jpg`,
+    'pandas': `${basePath}Images/pandas.png`,
+    'numpy': `${basePath}Images/numpy.png`,
+    'scikit-learn': `${basePath}Images/scikit learn.png`,
+    'scikit learn': `${basePath}Images/scikit learn.png`,
+    'sql': `${basePath}Images/mysql.png`,
+    'mysql': `${basePath}Images/mysql.png`,
+    'postgresql': `${basePath}Images/postgresql.png`,
+    'snowflake': `${basePath}Images/snowflake.png`,
+    'spark': `${basePath}Images/spark.png`,
+    'hadoop': `${basePath}Images/hadoop.png`,
+    'hdfs': `${basePath}Images/hdfs.jpg`,
+    'hive': `${basePath}Images/hive.png`,
+    'kafka': `${basePath}Images/kafka.png`,
+    'airflow': `${basePath}Images/airflow.png`,
+    'databricks': `${basePath}Images/databricks.png`,
+    'docker': `${basePath}Images/docker.png`,
+    'kubernetes': `${basePath}Images/kubernetes.png`,
+    'jenkins': `${basePath}Images/jenkins.png`,
+    'aws': `${basePath}Images/aws.png`,
+    'azure': `${basePath}Images/azure.png`,
+    'mongodb': `${basePath}Images/mongodb.png`,
+    'tableau': `${basePath}Images/tableau.png`,
+  };
+
+  // Best-effort source selection: direct map, or try sensible fallbacks
+  const candidateSrc = iconMap[key]
+    || iconMap[key.replace(/-/g, ' ')]
+    || iconMap[key.replace(/\s+/g, '-')]
+    || iconMap[key.replace(/\s+/g, '')]
+    || null;
+
+  if (!imgError && candidateSrc) {
+    return (
+      <img
+        className={iconClass}
+        src={candidateSrc}
+        alt={`${skillName} icon`}
+        onError={() => setImgError(true)}
+      />
+    );
   }
+
+  // Fallback: neutral badge with the first letter
+  const initial = (skillName || '?').charAt(0).toUpperCase();
+  return (
+    <div className="w-12 h-12 mx-auto bg-gray-400 text-white rounded-md flex items-center justify-center font-bold">
+      {initial}
+    </div>
+  );
 }
