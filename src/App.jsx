@@ -65,10 +65,10 @@ export default function App() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-8">
           <h1 className="text-5xl font-bold text-white text-center mb-6">
-            Sai Chandra Portfolio
+            Sai Chandra's Data World
           </h1>
           <div className="text-center">
-            <h2 className="text-3xl text-blue-100 mb-6">Welcome to my portfolio website!</h2>
+            <h2 className="text-3xl text-blue-100 mb-6">Hello, Welcome to my portfolio website!</h2>
             <p className="text-xl text-blue-50 max-w-4xl mx-auto leading-relaxed">
               I’m Sai Chandra Reddy Mandadapu, a Data Analyst passionate about transforming data into actionable insights. I work across retail and marketing domains, leveraging analytics, statistical modeling, and interactive dashboards to drive smarter decisions, uncover customer behavior patterns, and accelerate business growth.
             </p>
