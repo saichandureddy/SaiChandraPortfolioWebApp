@@ -88,6 +88,12 @@ export default function App() {
             </a>
             <a
               href={portfolioData.hero.ctaSecondary.href}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsFormSubmitted(false);
+                setIsContactModalOpen(true);
+              }}
+              aria-haspopup="dialog"
               className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-10 py-4 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               {portfolioData.hero.ctaSecondary.label}
@@ -303,7 +309,15 @@ export default function App() {
               <div className="text-center">
                 <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
                 <p>Your message has been successfully sent. We will get back to you soon.</p>
-                <button onClick={() => setIsContactModalOpen(false)} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">Close</button>
+                <button
+                  onClick={() => {
+                    setIsFormSubmitted(false);
+                    setIsContactModalOpen(false);
+                  }}
+                  className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
+                >
+                  Close
+                </button>
               </div>
             ) : (
               <>
@@ -350,7 +364,16 @@ export default function App() {
                   <textarea id="message" name="message" className="w-full p-2 border rounded mb-4" required></textarea>
 
                   <div className="flex justify-end">
-                    <button type="button" onClick={() => setIsContactModalOpen(false)} className="mr-4 px-4 py-2 bg-gray-300 rounded">Cancel</button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsFormSubmitted(false);
+                        setIsContactModalOpen(false);
+                      }}
+                      className="mr-4 px-4 py-2 bg-gray-300 rounded"
+                    >
+                      Cancel
+                    </button>
                     <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded">Send</button>
                   </div>
                 </form>
