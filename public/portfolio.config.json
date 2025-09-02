@@ -192,11 +192,11 @@
     {
       "company": "Mills Automotive Group",
       "role": "Data Analyst",
-      "period": "November 2024 \u2014 Present",
+      "period": "November 2024 - Present",
       "bullets": [
-        "Built inventory demand forecasting and pricing analytics for dealership network.",
-        "Integrated CDK, CDP, and GA4 into a central analytics repository.",
-        "Developed self-service Excel Google Sheets, Looker Studio reporting for stakeholders."
+        "Built funnel performance dashboards in Looker Studio and Google Sheets, enabling marketing teams to track and identify opportunities in CTR, CPC, CTAs, form submissions - leading to a 6% lift in quality leads.",
+        "Conducted attribution analysis on digital campaigns to optimize marketing ad spend across channels like paid search, shopping ads, OTTs, and social media - increasing lead conversion to sales from 4.5% to 7.8%.",
+        "Performed ANOVA and Chi-Square tests on vehicle inventory allocation data, improving sales turn rate by 14%."
       ]
     },
     {
